@@ -52,17 +52,21 @@ a {
     /*transform: none;*/
 }
 
-.device-btn{
+.device-btn, .product-set-favorite {
     background-color: initial;
     cursor: pointer;
     /*margin: 0 6px;*/
 }
 
+.btn-icon{
+    padding-left: 10px;
+    padding-right: 10px;
+}
 .device-btn.device-btn_active .device-btn-icon {
     fill: white;
 }
 
-.device-icon {
+.device-icon, .favorite-icon {
     /*font-size: 20px;*/
     height: 32px;
     width: 32px;

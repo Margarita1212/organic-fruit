@@ -2,6 +2,7 @@ import './style.css';
 import {AiOutlineMobile} from "react-icons/ai";
 import {BsTablet} from "react-icons/bs";
 import {AiOutlineDesktop} from "react-icons/ai";
+import {ImHeart} from "react-icons/im";
 
 function Header() {
     return (
@@ -44,7 +45,7 @@ function Header() {
                 <div className="favorite">
                     <button type="button" className="product-set-favorite btn btn-icon"
                             data-title="Add to Favorites" data-active-title="Remove from Favorites">
-                        a
+                        <ImHeart className="favorite-icon"/>
                     </button>
                 </div>
                 <div className="frame-toggler">
