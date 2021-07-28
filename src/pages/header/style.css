@@ -1,0 +1,130 @@
+a {
+    text-decoration: none;
+}
+
+.header {
+    align-items: center;
+    background: #2d394b;
+    display: flex;
+    height: 60px;
+    padding: 10px 70px 10px 30px;
+    position: sticky;
+    /*letf:0;*/
+    /*right:0;*/
+    /*top:0;*/
+}
+
+.back-to-product {
+    /*align-items: baseline;*/
+    color: #9cc9f5;
+    font-size: 14px;
+    /*display: inline-block;*/
+    /*line-height: 28px;*/
+    margin-right: 20px;
+    max-width: 45%;
+    min-width: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.back-to-product:hover {
+    color: white;
+}
+
+.back-to-product-icon {
+    border-color: #0000 #9cc8f5 #0000 #0000;
+    border-style: solid;
+    border-width: 5px 5px 5px 0;
+    display: inline-block;
+    margin-right: 10px;
+    height: 0;
+    width: 0;
+}
+
+.devices {
+    display: flex;
+    left: 50%;
+}
+
+.devices-static {
+    /*position: static;*/
+    /*transform: none;*/
+}
+
+.device-btn{
+    background-color: initial;
+    cursor: pointer;
+    /*margin: 0 6px;*/
+}
+
+.device-btn.device-btn_active .device-btn-icon {
+    fill: white;
+}
+
+.device-icon {
+    /*font-size: 20px;*/
+    height: 32px;
+    width: 32px;
+}
+
+.header-btn, .header-buttons {
+    align-items: center;
+    display: flex;
+}
+
+.header-buttons {
+    margin-left: auto;
+}
+
+.header-btn {
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 18px;
+    margin-left: 30px;
+    padding: 11px 20px;
+    white-space: nowrap;
+}
+
+.header-btn_services {
+    background: #2d394b;
+    border-radius: 3px 3px 0 0;
+    color: #fff;
+    justify-content: center;
+    min-width: 160px;
+    padding-left: 20px;
+    padding-right: 15px;
+    position: relative;
+}
+
+.add-to-cart {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.add-to-cart-button {
+    background: #1ab744;
+    margin-left: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+    color: #fff;
+    justify-content: center;
+    min-width: 160px;
+}
+
+.add-to-cart-button:hover {
+    background: #31af36;;
+}
+
+.header-btn_membershipBefore {
+    color: #fff;
+    font-size: 14px;
+    line-height: 21px;
+    margin-left: 25px;
+}
+
+.header-btn_membership {
+    background: #fff;
+    color: #243238;
+}
