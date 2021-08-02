@@ -85,6 +85,13 @@ function Header() {
                                                 My Account
                                                 <FaAngleDown className="angle-down" spin/>
                                             </a>
+                                            <ul className="myacc-list-dropdown">
+                                                <li>
+                                                    <a className="myacc-list-dropdown" href="https://epsilonitservice.com/woo/my-account/">
+                                                        Login / Register
+                                                    </a>
+                                                </li>
+                                            </ul>
                                         </li>
                                         <li className="vt-language">
                                             <div className="switcher notranslate">
@@ -96,14 +103,64 @@ function Header() {
                                                     <FaAngleDown className="angle-down"/>
                                                     <div className="option">
                                                         <a href="#" title="Arabic">
-                                                            <img src="https://epsilonitservice.com/woo/wp-content/plugins/gtranslate/flags/24/ar.png"
-                                                                 height="24" width="24" alt="ar"/>
+                                                            <img
+                                                                src="https://epsilonitservice.com/woo/wp-content/plugins/gtranslate/flags/24/ar.png"
+                                                                height="24" width="24" alt="ar"/>
                                                             Arabic
                                                         </a>
                                                         <a href="#" title="Chinese (Simplified)">
-                                                            <img src="https://epsilonitservice.com/woo/wp-content/plugins/gtranslate/flags/24/zh-CN.png"
-                                                                 height="24" width="24" alt="zh-CN"/>
+                                                            <img
+                                                                src="https://epsilonitservice.com/woo/wp-content/plugins/gtranslate/flags/24/zh-CN.png"
+                                                                height="24" width="24" alt="zh-CN"/>
                                                             Chinese (Simplified)
+                                                        </a>
+                                                        <a href="#" title="Dutch">
+                                                            <img
+                                                                src="https://epsilonitservice.com/woo/wp-content/plugins/gtranslate/flags/24/nl.png"
+                                                                height="24" width="24" alt="nl"/>
+                                                            Dutch
+                                                        </a>
+                                                        <a href="#" title="English">
+                                                            <img
+                                                                src="https://epsilonitservice.com/woo/wp-content/plugins/gtranslate/flags/24/en.png"
+                                                                height="24" width="24" alt="en"/>
+                                                            English
+                                                        </a>
+                                                        <a href="#" title="French">
+                                                            <img
+                                                                src="https://epsilonitservice.com/woo/wp-content/plugins/gtranslate/flags/24/fr.png"
+                                                                height="24" width="24" alt="fr"/>
+                                                            French
+                                                        </a>
+                                                        <a href="#" title="German">
+                                                            <img
+                                                                src="https://epsilonitservice.com/woo/wp-content/plugins/gtranslate/flags/24/de.png"
+                                                                height="24" width="24" alt="de"/>
+                                                            German
+                                                        </a>
+                                                        <a href="#" title="Italian">
+                                                            <img
+                                                                src="https://epsilonitservice.com/woo/wp-content/plugins/gtranslate/flags/24/it.png"
+                                                                height="24" width="24" alt="it"/>
+                                                            Italian
+                                                        </a>
+                                                        <a href="#" title="Portuguese">
+                                                            <img
+                                                                src="https://epsilonitservice.com/woo/wp-content/plugins/gtranslate/flags/24/pt.png"
+                                                                height="24" width="24" alt="pt"/>
+                                                            Portuguese
+                                                        </a>
+                                                        <a href="#" title="Russian">
+                                                            <img
+                                                                src="https://epsilonitservice.com/woo/wp-content/plugins/gtranslate/flags/24/ru.png"
+                                                                height="24" width="24" alt="ru"/>
+                                                            Russian
+                                                        </a>
+                                                        <a href="#" title="Spanish">
+                                                            <img
+                                                                src="https://epsilonitservice.com/woo/wp-content/plugins/gtranslate/flags/24/es.png"
+                                                                height="24" width="24" alt="es"/>
+                                                            Spanish
                                                         </a>
                                                     </div>
                                                 </a>

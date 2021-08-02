@@ -203,14 +203,13 @@ ul {
     float: right;
 }
 
-
-.chosen-drop {
+.vt-currency .chosen-container a {
     position: relative;
 }
 
-.vt-topbar-right ul ul{
+.vt-topbar-right ul ul {
     position: absolute;
-    top: 15px;
+    top: 45px;
     right: 10px;
     background: #fff;
     z-index: 1;
@@ -221,12 +220,16 @@ ul {
     display: none;
 }
 
-.vt-topbar-right ul li:hover ul{
+.vt-topbar-right ul li:hover ul {
     display: block;
 }
 
 .vt-topbar .vt-topbar-right ul li {
     display: inline-block;
+}
+
+.vt-topbar .vt-topbar-right .vt-currency ul li{
+    display: block;
 }
 
 .vt-topbar .vt-topbar-right ul li a {
@@ -235,13 +238,29 @@ ul {
     color: #9c9c9c;
 }
 
-.vt-language .switcher a{
-    /*position: relative;*/
+.vt-topbar-right .vt-topbar-right-menu .myaccount-list{
+    position: relative;
 }
 
-.vt-language .switcher .option {
+.vt-topbar-right .vt-topbar-right-menu .myaccount-list ul{
     position: absolute;
-    width: 200px;
+    top: 40px;
+    width: 150px;
+}
+
+.vt-language .switcher .option a {
+    display: block;
+}
+
+.vt-language .switcher:hover .option {
+    display: block;
+}
+
+.switcher .option {
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    overflow: auto;
     background: #fff;
     z-index: 1;
     border: 1px solid #f0f0f0;
@@ -249,7 +268,7 @@ ul {
     border-radius: 4px;
     right: 250px;
     top: 60px;
-
+    display: none;
     /*display: none;*/
     /*z-index: 9998;*/
     /*border-left: 1px solid #f0f0f0;*/
@@ -265,11 +284,6 @@ ul {
     /*padding: 10px;*/
 }
 
-
-
-
-
-
 .angle-down {
     margin-left: 5px;
     vertical-align: middle;
@@ -282,7 +296,6 @@ ul {
     vertical-align: middle;
     margin-bottom: 2px;
 }
-
 
 .vt-header-sec {
     padding: 25px 0;
@@ -395,7 +408,6 @@ ul {
 .vt-wc-list span:hover {
     background: red;
 }
-
 
 .vt-main-navigation {
     background-color: #7fb401;
