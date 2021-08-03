@@ -5,10 +5,10 @@ import Footer from "./pages/footer";
 
 function App() {
     return (
-        <div className="wrap">
+        <div id="page" className="hfeed site main-content">
             <Header/>
             <SiteContent/>
-            <Subscription/>
+            {/*<Subscription/>*/}
             <Footer/>
         </div>
     );

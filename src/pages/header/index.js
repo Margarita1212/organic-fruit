@@ -1,69 +1,14 @@
 import './style.css';
-import {AiOutlineMobile} from "react-icons/ai";
-import {BsTablet} from "react-icons/bs";
-import {AiOutlineDesktop} from "react-icons/ai";
-import {ImHeart} from "react-icons/im";
 import {FaMapMarkerAlt} from "react-icons/fa";
 import {FaAngleDown} from "react-icons/fa";
 import {BiSearch} from "react-icons/bi";
 import {FiHeart} from "react-icons/fi";
 import {HiShoppingBag} from "react-icons/hi";
-
+import {FaUser} from "react-icons/fa";
 
 function Header() {
     return (
         <>
-            {/*<div className="header">*/}
-            {/*    <a href="https://www.templatemonster.com/woocommerce-themes/organic-fruit-woocommerce-multipurpose-theme-176332.html"*/}
-            {/*       className="back-to-product">*/}
-            {/*        <span className="back-to-product-icon"/>*/}
-            {/*        Organic Fruit - WooCommerce Multipurpose Theme*/}
-            {/*    </a>*/}
-            {/*    <div className="devices devices-static">*/}
-            {/*        <button type="button" className="device-btn device-btn_smartphone" title="Mobile">*/}
-            {/*            <AiOutlineMobile className="device-icon"/>*/}
-            {/*        </button>*/}
-            {/*        <button type="button" className="device-btn device-btn_tablet" title="Tablet">*/}
-            {/*            <BsTablet className="device-icon"/>*/}
-            {/*        </button>*/}
-            {/*        <button type="button" className="device-btn device-btn_desktop" title="Desktop">*/}
-            {/*            <AiOutlineDesktop className="device-icon"/>*/}
-            {/*        </button>*/}
-            {/*    </div>*/}
-            {/*    <div className="header-buttons">*/}
-            {/*        <div className="add-to-cart">*/}
-            {/*            <button type="button" className="header-btn header-btn_services">*/}
-            {/*            <span className="header-btn_services-label">*/}
-            {/*                Popular Services*/}
-            {/*            </span>*/}
-            {/*            </button>*/}
-            {/*            <div className="cart-container"/>*/}
-            {/*            <a href="https://www.templatemonster.com/cart/?products=176332&license=19&channel=tm2-live_demo"*/}
-            {/*               className="btn btn_2 btn-block add-to-cart-button header-btn header-btn_cart">*/}
-            {/*                Buy Now for $39*/}
-            {/*            </a>*/}
-            {/*        </div>*/}
-            {/*        <span className="header-btn_membershipBefore">or</span>*/}
-            {/*        <a href="https://www.templatemonster.com/monsterone/tm-membership/?id=176332?tmaff=infiapp&_gl=1*hfu1p3*_ga*MjA5MjgyMzgwOC4xNjI3NDYyODU4*_ga_FTPYEGT5LY*MTYyNzQ3MDMyNC4yLjEuMTYyNzQ3MDM0My40MQ..&_ga=2.2036083.331085536.1627462860-2092823808.1627462858"*/}
-            {/*           target*/}
-            {/*           className="header-btn header-btn_membership">*/}
-            {/*            Get Unlimited Downloads*/}
-            {/*        </a>*/}
-            {/*        <div className="favorite">*/}
-            {/*            <button type="button" className="product-set-favorite btn btn-icon"*/}
-            {/*                    data-title="Add to Favorites" data-active-title="Remove from Favorites">*/}
-            {/*                <ImHeart className="favorite-icon"/>*/}
-            {/*            </button>*/}
-            {/*        </div>*/}
-            {/*        <div className="frame-toggler">*/}
-            {/*            <button type="button" className="frame-toggler-btn" title="Hide Panel">*/}
-            {/*                <span className="frame-toggler-btn-icon"/>*/}
-            {/*            </button>*/}
-
-            {/*        </div>*/}
-            {/*    </div>*/}
-            {/*</div>*/}
-
             <div id="main-header" className="site-header vt-header">
                 <div className="vt-topbar">
                     <div className="container">
@@ -80,15 +25,16 @@ function Header() {
                                 <div className="vt-topbar-right">
                                     <ul className="vt-topbar-right-menu">
                                         <li className="myaccount-list">
-                                            <a href="https://epsilonitservice.com/woo/my-account/"
+                                            <a className="myaccount" href="https://epsilonitservice.com/woo/my-account/"
                                                title="My Account">
                                                 My Account
                                                 <FaAngleDown className="angle-down" spin/>
                                             </a>
                                             <ul className="myacc-list-dropdown">
                                                 <li>
-                                                    <a className="myacc-list-dropdown" href="https://epsilonitservice.com/woo/my-account/">
-                                                        Login / Register
+                                                    <a className="myacc-list-dropdown"
+                                                       href="https://epsilonitservice.com/woo/my-account/">
+                                                        <FaUser className="FaName"/> Login / Register
                                                     </a>
                                                 </li>
                                             </ul>
@@ -253,7 +199,7 @@ function Header() {
                     </div>
                 </div>
 
-                <nav id="vt-primary-navigation" className="vt-main-navigation">
+                <nav id="vt-primary-navigation" className=" vt-main-navigation">
                     <div className="container">
                         <div className="row">
                             <div className="col-xl-12">
@@ -261,9 +207,17 @@ function Header() {
                                     <ul id="primary-menu" className="menu">
                                         <li><a href="https://epsilonitservice.com/woo/">HOME</a></li>
                                         <li><a href="https://epsilonitservice.com/woo/shop/">SHOP</a></li>
-                                        <li><a href="#">PAGES
-                                            <FaAngleDown className="angle-down" spin/>
-                                        </a></li>
+                                        <li>
+                                            <a href="#">PAGES
+                                                <FaAngleDown className="angle-down" spin/>
+                                            </a>
+                                            <ul className="sub-menu">
+                                                <li className="menu-item"><a href="https://epsilonitservice.com/woo/cart/">CART</a></li>
+                                                <li className="menu-item"><a href="https://epsilonitservice.com/woo/checkout/">CHECKOUT</a></li>
+                                                <li className="menu-item"><a href="https://epsilonitservice.com/woo/wishlist/">WISHLIST</a></li>
+                                                <li className="menu-item"><a href="https://epsilonitservice.com/woo/my-account/">MY ACCOUNT</a></li>
+                                            </ul>
+                                        </li>
                                         <li><a href="https://epsilonitservice.com/woo/blog/category/blog/">BLOG</a></li>
                                         <li><a href="https://epsilonitservice.com/woo/about-us/">ABOUT US</a></li>
                                         <li><a href="https://epsilonitservice.com/woo/contact-us/">CONTACT US</a></li>

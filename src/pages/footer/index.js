@@ -16,7 +16,7 @@ function Footer() {
             {/*        Learn React*/}
             {/*    </a>*/}
             {/*</header>*/}
-            footer
+            {/*footer*/}
         </div>
     );
 }
