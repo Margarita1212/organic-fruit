@@ -1,6 +1,10 @@
 import './style.css';
 import '../../index.css'
 import {Fragment} from "react";
+import {AiOutlineStar} from "react-icons/ai";
+import {FaShoppingCart} from "react-icons/fa"
+import {IoEye} from "react-icons/io5"
+import {FiHeart} from "react-icons/fi";
 
 function Content() {
     return (
@@ -15,16 +19,504 @@ function Content() {
                                     > Shop
                                 </nav>
                             </div>
-                            <div className="col-12">
+                            <div>
                                 <div className="row">
                                     <div className="col-xl-9 col-lg-12 col-md-12 col-sm-12 col-12 row-item">
                                         <div className="sticky-content">
                                             <header className="woocommerce-products-header">
                                                 <h1 className="woocommerce-products-header_title page-title">Shop</h1>
                                             </header>
+                                            <p className="woocommerce-result-count"> Showing 1-12 of 18 results</p>
+                                            <div className="woocommerce-ordering">
+                                                <select className="orderby">
+                                                    <option value="menu_order">Default sorting</option>
+                                                    <option value="popularity">Sort by popularity</option>
+                                                    <option value="rating">Sort by average rating</option>
+                                                    <option value="date">Sort by latest</option>
+                                                    <option value="price">Sort by price: low to high</option>
+                                                    <option value="price-desc">Sort by price: high to low</option>
+                                                </select>
+                                            </div>
+                                            <ul className="products columns-3">
+                                                <li className="product">
+                                                    <div className="vt-poduct-box">
+                                                        <div className="vt-product-image-area">
+                                                            <div className="new-label new-top-right">Sale!</div>
+                                                            <a className="product-image" title="Strawberry">
+                                                                <img width="228" height="228"
+                                                                     src="https://epsilonitservice.com/woo/wp-content/uploads/2021/03/16-1.png"
+                                                                     alt="Organic fruit"
+                                                                />
+                                                            </a>
+                                                            <div className="vt-product-link-area">
+                                                                <ul className="vt-product-link-info">
+                                                                    <li>
+                                                                        <a href="#"
+                                                                           className="button vt_add_to_cart add_to_cart_button ajax_add_to_cart">
+                                                                            <FaShoppingCart className="FaShoppingCart"/>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#"
+                                                                           className="button link-quickview vt-wcqv-button yith-wcqv-button">
+                                                                            <IoEye className="GrView"/>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#"
+                                                                           className="button vt-link-wishlist link-wishlist">
+                                                                            <FiHeart className="FiHeart"/>
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div className="vt-product-title">
+                                                            <span className="vt-cat-name">STRAWBERRY</span>
+                                                            <h3><a title="Perspiciatis Unde Omnis"
+                                                                   href="https://epsilonitservice.com/woo/product/perspiciatis-unde-omnis-18/"
+                                                            >Perspiciatis Unde Omnis</a></h3>
+                                                        </div>
+                                                        <div className="vt-product-rating">
+                                                            <div className="woocommerce-product-rating">
+                                                                <div className="star-rating">
+                                                                    <AiOutlineStar className="AiOutlineStar"/>
+                                                                    <AiOutlineStar className="AiOutlineStar"/>
+                                                                    <AiOutlineStar className="AiOutlineStar"/>
+                                                                    <AiOutlineStar className="AiOutlineStar"/>
+                                                                    <AiOutlineStar className="AiOutlineStar"/>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div className="vt-product-price">
+                                                            <span className="price">
+                                                                <del>
+                                                                    <span className="woocommerce-Price-amount amount">
+                                                                        <bdi>
+                                                                            <span
+                                                                                className="woocommerce-Price-currencySymbol">
+                                                                                $
+                                                                            </span>
+                                                                            35
+                                                                        </bdi>
+                                                                    </span>
+                                                                </del>
+                                                                <ins>
+                                                                    <span className="woocommerce-Price-amount amount">
+                                                                        <bdi>
+                                                                            <span
+                                                                                className="woocommerce-Price-currencySymbol">
+                                                                                $
+                                                                            </span>
+                                                                            25
+                                                                        </bdi>
+                                                                    </span>
+                                                                </ins>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li className="product">
+                                                    <div className="vt-poduct-box">
+                                                        <div className="vt-product-image-area">
+                                                            <div className="new-label new-top-right">Sale!</div>
+                                                            <a className="product-image" title="Mango">
+                                                                <img width="228" height="228"
+                                                                     src="https://epsilonitservice.com/woo/wp-content/uploads/2021/03/7-1.png"
+                                                                     alt="Organic fruit"
+                                                                />
+                                                            </a>
+                                                            <div className="vt-product-link-area">
+                                                                <ul className="vt-product-link-info">
+                                                                    <li>
+                                                                        <a href="#"
+                                                                           className="button vt_add_to_cart add_to_cart_button ajax_add_to_cart">
+                                                                            <FaShoppingCart className="FaShoppingCart"/>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#"
+                                                                           className="button link-quickview vt-wcqv-button yith-wcqv-button">
+                                                                            <IoEye className="GrView"/>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#"
+                                                                           className="button vt-link-wishlist link-wishlist">
+                                                                            <FiHeart className="FiHeart"/>
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div className="vt-product-title">
+                                                            <span className="vt-cat-name">MANGO</span>
+                                                            <h3><a title="Perspiciatis Unde Omnis"
+                                                                   href="https://epsilonitservice.com/woo/product/perspiciatis-unde-omnis-18/"
+                                                            >Perspiciatis Unde Omnis</a></h3>
+                                                        </div>
+                                                        <div className="vt-product-rating">
+                                                            <div className="woocommerce-product-rating">
+                                                                <div className="star-rating">
+                                                                    <AiOutlineStar className="AiOutlineStar"/>
+                                                                    <AiOutlineStar className="AiOutlineStar"/>
+                                                                    <AiOutlineStar className="AiOutlineStar"/>
+                                                                    <AiOutlineStar className="AiOutlineStar"/>
+                                                                    <AiOutlineStar className="AiOutlineStar"/></div>
+                                                            </div>
+                                                        </div>
+                                                        <div className="vt-product-price">
+                                                            <span className="price">
+                                                                <del>
+                                                                    <span className="woocommerce-Price-amount amount">
+                                                                        <bdi>
+                                                                            <span
+                                                                                className="woocommerce-Price-currencySymbol">
+                                                                                $
+                                                                            </span>
+                                                                            35
+                                                                        </bdi>
+                                                                    </span>
+                                                                </del>
+                                                                <ins>
+                                                                    <span className="woocommerce-Price-amount amount">
+                                                                        <bdi>
+                                                                            <span
+                                                                                className="woocommerce-Price-currencySymbol">
+                                                                                $
+                                                                            </span>
+                                                                            25
+                                                                        </bdi>
+                                                                    </span>
+                                                                </ins>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li className="product">
+                                                    <div className="vt-poduct-box">
+                                                        <div className="vt-product-image-area">
+                                                            <div className="new-label new-top-right">Sale!</div>
+                                                            <a className="product-image" title="Strawberry">
+                                                                <img width="228" height="228"
+                                                                     src="https://epsilonitservice.com/woo/wp-content/uploads/2021/03/16-1.png"
+                                                                     alt="Organic fruit"
+                                                                />
+                                                            </a>
+                                                            <div className="vt-product-link-area">
+                                                                <ul className="vt-product-link-info">
+                                                                    <li>
+                                                                        <a href="#"
+                                                                           className="button vt_add_to_cart add_to_cart_button ajax_add_to_cart">
+                                                                            <FaShoppingCart className="FaShoppingCart"/>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#"
+                                                                           className="button link-quickview vt-wcqv-button yith-wcqv-button">
+                                                                            <IoEye className="GrView"/>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#"
+                                                                           className="button vt-link-wishlist link-wishlist">
+                                                                            <FiHeart className="FiHeart"/>
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div className="vt-product-title">
+                                                            <span className="vt-cat-name">Strawberry</span>
+                                                            <h3><a title="Perspiciatis Unde Omnis"
+                                                                   href="https://epsilonitservice.com/woo/product/perspiciatis-unde-omnis-18/"
+                                                            >Perspiciatis Unde Omnis</a></h3>
+                                                        </div>
+                                                        <div className="vt-product-rating">
+                                                            <div className="woocommerce-product-rating">
+                                                                <div className="star-rating">
+                                                                    <AiOutlineStar className="AiOutlineStar"/>
+                                                                    <AiOutlineStar className="AiOutlineStar"/>
+                                                                    <AiOutlineStar className="AiOutlineStar"/>
+                                                                    <AiOutlineStar className="AiOutlineStar"/>
+                                                                    <AiOutlineStar className="AiOutlineStar"/></div>
+                                                            </div>
+                                                        </div>
+                                                        <div className="vt-product-price">
+                                                            <span className="price">
+                                                                <del>
+                                                                    <span className="woocommerce-Price-amount amount">
+                                                                        <bdi>
+                                                                            <span
+                                                                                className="woocommerce-Price-currencySymbol">
+                                                                                $
+                                                                            </span>
+                                                                            35
+                                                                        </bdi>
+                                                                    </span>
+                                                                </del>
+                                                                <ins>
+                                                                    <span className="woocommerce-Price-amount amount">
+                                                                        <bdi>
+                                                                            <span
+                                                                                className="woocommerce-Price-currencySymbol">
+                                                                                $
+                                                                            </span>
+                                                                            25
+                                                                        </bdi>
+                                                                    </span>
+                                                                </ins>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul className="products columns-3">
+                                                <li className="product">
+                                                    <div className="vt-poduct-box">
+                                                        <div className="vt-product-image-area">
+                                                            <div className="new-label new-top-right">Sale!</div>
+                                                            <a className="product-image" title="Strawberry">
+                                                                <img width="228" height="228"
+                                                                     src="https://epsilonitservice.com/woo/wp-content/uploads/2021/03/16-1.png"
+                                                                     alt="Organic fruit"
+                                                                />
+                                                            </a>
+                                                            <div className="vt-product-link-area">
+                                                                <ul className="vt-product-link-info">
+                                                                    <li>
+                                                                        <a href="#" className="button vt_add_to_cart add_to_cart_button ajax_add_to_cart">
+                                                                            <FaShoppingCart className="FaShoppingCart"/>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#" className="button link-quickview vt-wcqv-button yith-wcqv-button">
+                                                                            <IoEye className="GrView"/>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#" className="button vt-link-wishlist link-wishlist">
+                                                                            <FiHeart className="FiHeart"/>
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div className="vt-product-title">
+                                                            <span className="vt-cat-name">STRAWBERRY</span>
+                                                            <h3><a title="Perspiciatis Unde Omnis"
+                                                                   href="https://epsilonitservice.com/woo/product/perspiciatis-unde-omnis-18/"
+                                                            >Perspiciatis Unde Omnis</a></h3>
+                                                        </div>
+                                                        <div className="vt-product-rating">
+                                                            <div className="woocommerce-product-rating">
+                                                                <div className="star-rating">
+                                                                    <AiOutlineStar className="AiOutlineStar"/>
+                                                                    <AiOutlineStar className="AiOutlineStar"/>
+                                                                    <AiOutlineStar className="AiOutlineStar"/>
+                                                                    <AiOutlineStar className="AiOutlineStar"/>
+                                                                    <AiOutlineStar className="AiOutlineStar"/>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div className="vt-product-price">
+                                                            <span className="price">
+                                                                <del>
+                                                                    <span className="woocommerce-Price-amount amount">
+                                                                        <bdi>
+                                                                            <span
+                                                                                className="woocommerce-Price-currencySymbol">
+                                                                                $
+                                                                            </span>
+                                                                            35
+                                                                        </bdi>
+                                                                    </span>
+                                                                </del>
+                                                                <ins>
+                                                                    <span className="woocommerce-Price-amount amount">
+                                                                        <bdi>
+                                                                            <span
+                                                                                className="woocommerce-Price-currencySymbol">
+                                                                                $
+                                                                            </span>
+                                                                            25
+                                                                        </bdi>
+                                                                    </span>
+                                                                </ins>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li className="product">
+                                                    <div className="vt-poduct-box">
+                                                        <div className="vt-product-image-area">
+                                                            <div className="new-label new-top-right">Sale!</div>
+                                                            <a className="product-image" title="Mango">
+                                                                <img width="228" height="228"
+                                                                     src="https://epsilonitservice.com/woo/wp-content/uploads/2021/03/7-1.png"
+                                                                     alt="Organic fruit"
+                                                                />
+                                                            </a>
+                                                            <div className="vt-product-link-area">
+                                                                <ul className="vt-product-link-info">
+                                                                    <li>
+                                                                        <a href="#"
+                                                                           className="button vt_add_to_cart add_to_cart_button ajax_add_to_cart">
+                                                                            <FaShoppingCart className="FaShoppingCart"/>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#"
+                                                                           className="button link-quickview vt-wcqv-button yith-wcqv-button">
+                                                                            <IoEye className="GrView"/>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#"
+                                                                           className="button vt-link-wishlist link-wishlist">
+                                                                            <FiHeart className="FiHeart"/>
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div className="vt-product-title">
+                                                            <span className="vt-cat-name">MANGO</span>
+                                                            <h3><a title="Perspiciatis Unde Omnis"
+                                                                   href="https://epsilonitservice.com/woo/product/perspiciatis-unde-omnis-18/"
+                                                            >Perspiciatis Unde Omnis</a></h3>
+                                                        </div>
+                                                        <div className="vt-product-rating">
+                                                            <div className="woocommerce-product-rating">
+                                                                <div className="star-rating">
+                                                                    <AiOutlineStar className="AiOutlineStar"/>
+                                                                    <AiOutlineStar className="AiOutlineStar"/>
+                                                                    <AiOutlineStar className="AiOutlineStar"/>
+                                                                    <AiOutlineStar className="AiOutlineStar"/>
+                                                                    <AiOutlineStar className="AiOutlineStar"/></div>
+                                                            </div>
+                                                        </div>
+                                                        <div className="vt-product-price">
+                                                            <span className="price">
+                                                                <del>
+                                                                    <span className="woocommerce-Price-amount amount">
+                                                                        <bdi>
+                                                                            <span
+                                                                                className="woocommerce-Price-currencySymbol">
+                                                                                $
+                                                                            </span>
+                                                                            35
+                                                                        </bdi>
+                                                                    </span>
+                                                                </del>
+                                                                <ins>
+                                                                    <span className="woocommerce-Price-amount amount">
+                                                                        <bdi>
+                                                                            <span
+                                                                                className="woocommerce-Price-currencySymbol">
+                                                                                $
+                                                                            </span>
+                                                                            25
+                                                                        </bdi>
+                                                                    </span>
+                                                                </ins>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li className="product">
+                                                    <div className="vt-poduct-box">
+                                                        <div className="vt-product-image-area">
+                                                            <div className="new-label new-top-right">Sale!</div>
+                                                            <a className="product-image" title="Strawberry">
+                                                                <img width="228" height="228"
+                                                                     src="https://epsilonitservice.com/woo/wp-content/uploads/2021/03/16-1.png"
+                                                                     alt="Organic fruit"
+                                                                />
+                                                            </a>
+                                                            <div className="vt-product-link-area">
+                                                                <ul className="vt-product-link-info">
+                                                                    <li>
+                                                                        <a href="#"
+                                                                           className="button vt_add_to_cart add_to_cart_button ajax_add_to_cart">
+                                                                            <FaShoppingCart className="FaShoppingCart"/>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#"
+                                                                           className="button link-quickview vt-wcqv-button yith-wcqv-button">
+                                                                            <IoEye className="GrView"/>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#"
+                                                                           className="button vt-link-wishlist link-wishlist">
+                                                                            <FiHeart className="FiHeart"/>
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div className="vt-product-title">
+                                                            <span className="vt-cat-name">Strawberry</span>
+                                                            <h3>
+                                                                <a title="Perspiciatis Unde Omnis"
+                                                                   href="https://epsilonitservice.com/woo/product/perspiciatis-unde-omnis-18/"
+                                                                >Perspiciatis Unde Omnis
+                                                                </a>
+
+                                                            </h3>
+                                                        </div>
+                                                        <div className="vt-product-rating">
+                                                            <div className="woocommerce-product-rating">
+                                                                <div className="star-rating">
+                                                                    <AiOutlineStar className="AiOutlineStar"/>
+                                                                    <AiOutlineStar className="AiOutlineStar"/>
+                                                                    <AiOutlineStar className="AiOutlineStar"/>
+                                                                    <AiOutlineStar className="AiOutlineStar"/>
+                                                                    <AiOutlineStar className="AiOutlineStar"/></div>
+                                                            </div>
+                                                        </div>
+                                                        <div className="vt-product-price">
+                                                            <span className="price">
+                                                                <del>
+                                                                    <span className="woocommerce-Price-amount amount">
+                                                                        <bdi>
+                                                                            <span
+                                                                                className="woocommerce-Price-currencySymbol">
+                                                                                $
+                                                                            </span>
+                                                                            35
+                                                                        </bdi>
+                                                                    </span>
+                                                                </del>
+                                                                <ins>
+                                                                    <span className="woocommerce-Price-amount amount">
+                                                                        <bdi>
+                                                                            <span
+                                                                                className="woocommerce-Price-currencySymbol">
+                                                                                $
+                                                                            </span>
+                                                                            25
+                                                                        </bdi>
+                                                                    </span>
+                                                                </ins>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <nav className="woocommerce-pagination">
+                                                <ul>
+                                                    <li></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                </ul>
+                                            </nav>
                                         </div>
                                     </div>
                                     <div className="col-xl-3 col-lg-12 col-md-12 col-sm-12 col-12 row-item">
+                                        lya
                                     </div>
                                 </div>
                             </div>
