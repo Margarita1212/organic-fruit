@@ -199,9 +199,11 @@ span.woocommerce-Price-amount.amount {
 .sticky-content .products .product .vt-product-image-area .vt-product-link-area ul.vt-product-link-info li:hover .FaShoppingCart {
     color: white;
 }
+
 .sticky-content .products .product .vt-product-image-area .vt-product-link-area ul.vt-product-link-info li:hover .GrView {
     color: white;
 }
+
 .sticky-content .products .product .vt-product-image-area .vt-product-link-area ul.vt-product-link-info li:hover .FiHeart {
     color: white;
 }
@@ -234,3 +236,39 @@ span.woocommerce-Price-amount.amount {
     color: black;
 }
 
+nav.woocommerce-pagination {
+    /*text-align: center;*/
+}
+
+
+nav.woocommerce-pagination {
+    width: 100%;
+    text-align: center;
+}
+
+nav.woocommerce-pagination ul{
+    display: inline-block;
+}
+
+nav.woocommerce-pagination ul li {
+    margin: 9px auto;
+    float: left;
+}
+
+nav.woocommerce-pagination ul li a, nav.woocommerce-pagination ul li span {
+    color: #7fb401;
+    padding: 13px 17px;
+    font-weight: 700;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    font-size: 18px;
+    line-height: 20px;
+    background: #f7f7f9;
+    margin-left: 4px;
+}
+
+nav.woocommerce-pagination ul li a:hover {
+    color: white;
+    background: #7fb401;
+}

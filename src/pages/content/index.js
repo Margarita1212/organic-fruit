@@ -5,6 +5,7 @@ import {AiOutlineStar} from "react-icons/ai";
 import {FaShoppingCart} from "react-icons/fa"
 import {IoEye} from "react-icons/io5"
 import {FiHeart} from "react-icons/fi";
+import {BsArrowRight} from "react-icons/bs";
 
 function Content() {
     return (
@@ -285,17 +286,20 @@ function Content() {
                                                             <div className="vt-product-link-area">
                                                                 <ul className="vt-product-link-info">
                                                                     <li>
-                                                                        <a href="#" className="button vt_add_to_cart add_to_cart_button ajax_add_to_cart">
+                                                                        <a href="#"
+                                                                           className="button vt_add_to_cart add_to_cart_button ajax_add_to_cart">
                                                                             <FaShoppingCart className="FaShoppingCart"/>
                                                                         </a>
                                                                     </li>
                                                                     <li>
-                                                                        <a href="#" className="button link-quickview vt-wcqv-button yith-wcqv-button">
+                                                                        <a href="#"
+                                                                           className="button link-quickview vt-wcqv-button yith-wcqv-button">
                                                                             <IoEye className="GrView"/>
                                                                         </a>
                                                                     </li>
                                                                     <li>
-                                                                        <a href="#" className="button vt-link-wishlist link-wishlist">
+                                                                        <a href="#"
+                                                                           className="button vt-link-wishlist link-wishlist">
                                                                             <FiHeart className="FiHeart"/>
                                                                         </a>
                                                                     </li>
@@ -506,17 +510,45 @@ function Content() {
                                                     </div>
                                                 </li>
                                             </ul>
-                                            <nav className="woocommerce-pagination">
-                                                <ul>
-                                                    <li></li>
-                                                    <li></li>
-                                                    <li></li>
-                                                </ul>
-                                            </nav>
+                                            <div className="row">
+
+                                                <nav className="woocommerce-pagination">
+                                                    <ul>
+                                                        <li><span className="page-numbers">1</span></li>
+                                                        <li><a className="page-numbers"
+                                                               href="https://epsilonitservice.com/woo/shop/page/2/">2</a>
+                                                        </li>
+                                                        <li><a className="page-numbers"
+                                                               href="https://epsilonitservice.com/woo/shop/page/2/">
+                                                            <BsArrowRight/>
+                                                        </a></li>
+                                                    </ul>
+                                                </nav>
+                                            </div>
+
                                         </div>
                                     </div>
                                     <div className="col-xl-3 col-lg-12 col-md-12 col-sm-12 col-12 row-item">
-                                        lya
+                                        <aside id="vt-sidebar" className="vt-custom-sidebar" role="complementary">
+                                            <section className="widget clearfix woocommerce widget_price_filter">
+                                                <h3>Filter By Price</h3>
+                                                <div className="price_slider_wrapper">
+                                                    <div className="price_slider ul-slider"></div>
+                                                    <div className="price_slider_amount">
+                                                        <button type="submit" className="button">Filter</button>
+                                                        <div className="price_label">
+                                                            Price
+                                                            <span className="from">$0</span>
+                                                            -
+                                                            <span className="to">$90</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </section>
+                                            <section></section>
+                                            <section></section>
+                                            <section></section>
+                                        </aside>
                                     </div>
                                 </div>
                             </div>
